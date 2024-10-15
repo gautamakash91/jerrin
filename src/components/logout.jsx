@@ -1,13 +1,31 @@
-export default function Logout(){
+import { useState } from "react";
+
+export default function Logout() {
+  const [loggedIn, setLoggedIn] = useState(false);
+  //tertiary operator
+  //conditional rendering
+  
   return (
-    <div>
-      <button>
+    <div
+      style={{
+        backgroundColor: loggedIn == true ? "#00ff00" : "#ff0000",
+      }}
+    >
+      <button
+        onClick={() => {
+          setLoggedIn(true);
+        }}
+      >
         Login
       </button>
-      "User is logged out"
-      <button>
+      <button
+        onClick={() => {
+          setLoggedIn(false);
+        }}
+      >
         logout
       </button>
+      {loggedIn == true ? "You are logged in" : "You are logged out"}
     </div>
-  )
+  );
 }
