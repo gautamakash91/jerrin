@@ -1,14 +1,24 @@
 import { useState } from "react";
+var a = 10;
 
 export default function Styling() {
   const [margin, setMargin] = useState(0);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("password1234");
   // function handleChange(event){
   //   setMargin(parseInt(event.target.value))
   // }
 
-  // const handleChange = (event) => {
-  //   setMargin(parseInt(event.target.value));
-  // }
+  const handleChange = (event) => {
+    // setMargin(parseInt(event.target.value));
+    if(email == "akash@gmail.com"){
+      
+    }
+
+    if(password.length > 8){
+
+    }
+  }
 
   return (
     <div
@@ -29,6 +39,15 @@ export default function Styling() {
         }}
       />
       hello
+      
+      <div style={{
+        backgroundColor: "white",
+        padding: 10
+      }}>
+      1: {margin}
+      <br />
+      2: "margin"
+      </div>
     </div>
   );
 }
