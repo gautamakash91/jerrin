@@ -1,11 +1,17 @@
 import { useState } from "react"
 
+//function definition
+//function call 
+
 export default function Slider(){
-  const [red, setRed] = useState(0)
+  const [red, setRed] = useState(0);
+
   return (
     <div
+      // className="p-10 bg-red-500"
       style={{
-        backgroundColor: "rgb("+red+", "+red+", 250)"
+        backgroundColor: "#ff0000",
+        padding: 10
       }}
     >
       slider
@@ -23,7 +29,7 @@ export default function Slider(){
         type="range"
         value={red}
         onChange={(event)=>{
-          setRed(event.target.value)
+          setRed(event.target.value);
         }}
       />
       {red}

@@ -11,14 +11,12 @@ export default function Styling() {
 
   const handleChange = (event) => {
     // setMargin(parseInt(event.target.value));
-    if(email == "akash@gmail.com"){
-      
+    if (email == "akash@gmail.com") {
     }
 
-    if(password.length > 8){
-
+    if (password.length > 8) {
     }
-  }
+  };
 
   return (
     <div
@@ -30,7 +28,7 @@ export default function Styling() {
         height: "100vh",
       }}
     >
-      <input 
+      <input
         value={margin}
         type="number"
         placeholder="enter margin..."
@@ -39,14 +37,15 @@ export default function Styling() {
         }}
       />
       hello
-      
-      <div style={{
-        backgroundColor: "white",
-        padding: 10
-      }}>
-      1: {margin}
-      <br />
-      2: "margin"
+      <div
+        style={{
+          backgroundColor: "white",
+          padding: 10,
+        }}
+      >
+        1: {margin}
+        <br />
+        2: "margin"
       </div>
     </div>
   );

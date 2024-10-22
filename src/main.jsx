@@ -8,6 +8,7 @@ import Styling from "./components/styling.jsx";
 import Logout from "./components/logout.jsx";
 import Slider from "./homework/slider/slider.jsx";
 // import Counter, { Calculator } from "./components/counter.jsx"; //relative path
+import "./index.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
