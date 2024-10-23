@@ -1,4 +1,5 @@
 import { useState } from "react"
+import mirror from "../assets/2.png";
 
 export default function Arrays(){
   const [arr, setArr] = useState([]);
@@ -13,6 +14,12 @@ export default function Arrays(){
 
   return (
     <div>
+      <img 
+        src={mirror} 
+        style={{
+          width: 100
+        }}
+      />
       <input />
       <button 
         onClick={handleClick}
