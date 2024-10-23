@@ -9,9 +9,10 @@ import Logout from "./components/logout.jsx";
 import Slider from "./homework/slider/slider.jsx";
 // import Counter, { Calculator } from "./components/counter.jsx"; //relative path
 import "./index.css";
+import Arrays from "./components/arrays.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Slider />
+    <Arrays />
   </StrictMode>
 );
